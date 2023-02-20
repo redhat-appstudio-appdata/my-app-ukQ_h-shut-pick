@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-bjxn
+  namespace: rhn-support-cguttman-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:40fba269cde8b8fa0dd05665774475c240e683adec9a54c139c763fa0c13b5d5
+        name: my-java-springboot
+        resources: {}
+status: {}
